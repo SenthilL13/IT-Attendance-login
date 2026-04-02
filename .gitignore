@@ -1,0 +1,12 @@
+node_modules/
+dist/
+__pycache__/
+*.pyc
+*.pyo
+venv/
+.env
+.wrangler/
+worker/.wrangler/
+frontend/.wrangler/
+backend/database.db
+*.log

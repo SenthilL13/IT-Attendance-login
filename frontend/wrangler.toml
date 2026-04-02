@@ -1,0 +1,8 @@
+name = "it-attendance-login"
+pages_build_output_dir = "dist"
+compatibility_date = "2024-09-23"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "attendance-db-prod"
+database_id = "d30d5c7c-3308-4b4f-b07a-c13d932c1e18"

@@ -1,0 +1,10 @@
+name = "it-attendance-api"
+main = "src/index.js"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+account_id = "e531914e131b23cf8d888822e7e636ce"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "attendance-db-prod"
+database_id = "d30d5c7c-3308-4b4f-b07a-c13d932c1e18"
