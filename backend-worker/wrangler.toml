@@ -1,6 +1,6 @@
 name = "attendance-backend"
-main = "src/main.py"
-compatibility_date = "2024-03-31"
+main = "main.py"
+compatibility_date = "2024-09-23"
 compatibility_flags = ["python_workers"]
 
 [[d1_databases]]
