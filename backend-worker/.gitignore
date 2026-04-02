@@ -1,0 +1,11 @@
+.venv/
+.venv-workers/
+__pycache__/
+*.pyc
+*.log
+schema.sql
+seed.sql
+schema_dump.py
+generate_seed.py
+out_bundle/
+.wrangler/

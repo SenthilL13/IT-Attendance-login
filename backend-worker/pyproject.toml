@@ -1,0 +1,13 @@
+[project]
+name = "attendance-backend"
+version = "0.1.0"
+description = "FastAPI backend for Attendance app on Cloudflare Workers"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.6",
+    "sqlalchemy>=2.0.36",
+    "sqlalchemy-cloudflare-d1>=0.1.0",
+    "pydantic>=2.10.4",
+    "pyjwt>=2.10.1",
+]

@@ -1,0 +1,15 @@
+name = "attendance-backend"
+main = "src/main.py"
+compatibility_date = "2024-03-31"
+compatibility_flags = ["python_workers"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "attendance-db"
+database_id = "2d9920e5-cf2a-46e9-a4cf-50a7fc3761b7"
+
+[observability]
+enabled = true
+
+[placement]
+mode = "smart"
