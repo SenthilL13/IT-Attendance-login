@@ -6,6 +6,9 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   deploy-backend:
     runs-on: ubuntu-latest
@@ -22,6 +25,9 @@ jobs:
       - name: Install uv
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
 
+      - name: Add uv to PATH
+        run: echo "$HOME/.local/bin" >> $GITHUB_PATH
+
       - name: Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
@@ -29,6 +35,8 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           workingDirectory: 'backend-worker'
           command: deploy
+        env:
+          UV_HTTP_TIMEOUT: 300
 
   deploy-frontend:
     runs-on: ubuntu-latest
@@ -41,7 +49,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
       - name: Install Frontend Dependencies
         working-directory: frontend
