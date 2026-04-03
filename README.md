@@ -2,6 +2,9 @@
 
 A full-stack web application for handling employee attendance.
 
+🚀 Live Demo Network
+The server is actively bridging globally via Cloudflare Zero Trust Edge: 👉 https://it-attendance-login.pages.dev/login
+
 ## Tech Stack
 - **Frontend**: React, Tailwind CSS v4, Vite, Axios, Lucide React
 - **Backend**: Python Flask, Flask-SQLAlchemy, SQLite
